@@ -170,3 +170,12 @@ if __name__ == '__main__':
         pass     
 ```
 ![Movimiento de tortuga](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/turtlesim1.png)
+## Análisis
+
+
+## Conclusiones
+La mejor forma para desarrollar el laboratorio es instalando Linux Ubuntu en la versión 20.04 y ROS en su versión Noetic en una partición de un disco duro. Se intentaron las actividades con variaciones de otras versiones de Ubuntu o de ROS2 pero, en ninguna de ellas se logró la comunicación correcta con Matlab.
+
+El paquete turtlesim permite evidenciar de manera gráfica la interacción de un nodo creado desde matlab con un nodo maestro. Se facilita la lectura de propiedades y modificación de las mismas.
+
+Las instrucciones de ROS se pueden ejecutar en ventanas de Terminal. Sin embargo, Matlab posee un Toolbox que permite la comunicación con un nodo maestro en ROS. Esto le añade todo el poder de cálculo y cómputo de Matlab a ROS, incluyendo la posibilidad de los procesos de simulación con Simulink
