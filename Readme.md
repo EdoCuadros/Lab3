@@ -67,6 +67,8 @@ rosshutdown;  %Cierra la conexion con el maestro
 ```
 ![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros6.png)
 
+## Utilizando Python
+
 ## Análisis
 
 ## Conclusiones
