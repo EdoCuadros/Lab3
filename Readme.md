@@ -10,12 +10,25 @@ ROS (Robot Operating System) provee librerías y herramientas para ayudar a los 
 
 ## Conexión de ROS con Matlab:
 Procedimiento:
+
 Con Linux operando lanzar 2 terminales. En la primera terminal escribir el comando roscore
 para iniciar el nodo maestro.
 ![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros1.png)
 En la segunda terminal escribir rosrun turtlesim turtlesim node.
-
+![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros2.png)
 Lanzar una instancia de Matlab para Linux (es imperativo que tenga el toolbox de robótica
 de Mathworks).
-
+![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros3.png)
 Crear un script con el siguiente código:
+```
+%%
+rosinit; %Conexión con nodo maestro
+%%
+velPub = rospublisher('/turtle1/cmd_vel','geometry_msgs/Twist'); %Creación publicador
+velMsg = rosmessage(velPub) %Creación de mensaje
+%%
+velMsg.Linear.X = 2 %Valor del mensaje
+velMsg.Linear.Y = 3
+send(velPub,velMsg) %Envio
+pause(1)
+```
