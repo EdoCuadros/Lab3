@@ -31,4 +31,5 @@ velMsg.Linear.Y = 3
 send(velPub,velMsg) %Envio
 pause(1)
 ```
+Ejecutar las tres secciones del script y observar los resultados con la pose de la tortuga.
 ![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros3.png)
