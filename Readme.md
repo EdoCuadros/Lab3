@@ -33,3 +33,30 @@ pause(1)
 ```
 Ejecutar las tres secciones del script y observar los resultados con la pose de la tortuga.
 ![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros3.png)
+
+Crear un script en Matlab que permita suscribirse al tópico de pose de la simulación de turtle1. Tip: Usar la instrucción rossubscriber con los argumentos (’TOPICNAME’, ’MESSAGETY- PE’), luego utilizar la opción lattest message para captura el último mensaje obtenido.
+```
+%%
+posPub = rospublisher('/turtle1/pose','turtlesim/Pose'); %Creación publicador
+posMsg = rosmessage(posPub) %Creación de mensaje
+```
+![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros4.png)
+Crear un script en Matlab que permita enviar todos los valores asociados a la pose de turtle1. Tip: El tópico pose únicamente sirve para suscribirse, consultar los servicios de turtlesim para modificar la pose de la tortuga.
+```
+%%
+posMsg.X = 2; %Valor del mensaje
+posMsg.Y = 3;
+posMsg.Theta=1.572;
+posMsg.LinearVelocity=1;
+posMsg.AngularVelocity=1;
+send(posPub,posMsg) %Envio
+pause(1)
+```
+![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros5.png)
+Consultar de qué manera se finaliza el nodo maestro en Matlab.
+```
+%% 
+rosshutdown;  %Cierra la conexion con el maestro
+
+```
+![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros6.png)
