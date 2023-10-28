@@ -18,7 +18,6 @@ En la segunda terminal escribir rosrun turtlesim turtlesim node.
 ![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros2.png)
 Lanzar una instancia de Matlab para Linux (es imperativo que tenga el toolbox de robótica
 de Mathworks).
-![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros3.png)
 Crear un script con el siguiente código:
 ```
 %%
@@ -32,3 +31,4 @@ velMsg.Linear.Y = 3
 send(velPub,velMsg) %Envio
 pause(1)
 ```
+![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros3.png)
