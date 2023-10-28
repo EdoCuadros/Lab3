@@ -12,7 +12,7 @@ ROS (Robot Operating System) provee librerías y herramientas para ayudar a los 
 Procedimiento:
 Con Linux operando lanzar 2 terminales. En la primera terminal escribir el comando roscore
 para iniciar el nodo maestro.
-![Diagrama de flujo](https://github.com/EdoCuadros/Lab3/blob/main/Flujo.png)
+![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros1.png)
 En la segunda terminal escribir rosrun turtlesim turtlesim node.
 
 Lanzar una instancia de Matlab para Linux (es imperativo que tenga el toolbox de robótica
