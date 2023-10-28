@@ -8,16 +8,22 @@ Integrantes:
 ## Introducción
 ROS (Robot Operating System) provee librerías y herramientas para ayudar a los desarrolladores de software a crear aplicaciones para robots. ROS provee abstracción de hardware, controladores de dispositivos, librerías, herramientas de visualización, comunicación por mensajes, administración de paquetes y más. ROS está bajo la licencia open source, BSD.
 
+Un sistema ROS está compuesto por un número de nodos independientes, cada uno de los cuales puede comunicarse con otros nodos usando un modelo de mensajes
+publish/subscribe
+
+ROS inicia al levantar su elemento principal, el ROS master. El master permite que otros elementos de software (nodos) puedan encontrarse e intercambiar información. Para esto los nodos publican y se suscriben en tópicos.
+
+Para poder entender el funcionamiento de ROS se puede usar turtlesim, el cual es un paquete que consiste en una pantalla en la que se carga una tortuga, la que se puede mover por la pantalla y otras cosas más.
+
+
 ## Conexión de ROS con Matlab:
 Procedimiento:
 
-Con Linux operando lanzar 2 terminales. En la primera terminal escribir el comando roscore
-para iniciar el nodo maestro.
+Con Linux operando lanzar 2 terminales. En la primera terminal escribir el comando roscore para iniciar el nodo maestro.
 ![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros1.png)
 En la segunda terminal escribir rosrun turtlesim turtlesim node.
 ![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros2.png)
-Lanzar una instancia de Matlab para Linux (es imperativo que tenga el toolbox de robótica
-de Mathworks).
+Lanzar una instancia de Matlab para Linux (es imperativo que tenga el toolbox de robótica de Mathworks).
 Crear un script con el siguiente código:
 ```
 %%
