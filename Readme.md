@@ -1,4 +1,4 @@
-# Laboratorio 3 de Robótica
+# Laboratorio 3 de Robótica. Introduccipon a ROS
 Integrantes:
 
 ***Eduardo Cuadros Montealegre***
