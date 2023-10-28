@@ -183,3 +183,5 @@ La mejor forma para desarrollar el laboratorio es instalando Linux Ubuntu en la 
 El paquete turtlesim permite evidenciar de manera gráfica la interacción de un nodo creado desde matlab con un nodo maestro. Se facilita la lectura de propiedades y modificación de las mismas.
 
 Las instrucciones de ROS se pueden ejecutar en ventanas de Terminal. Sin embargo, Matlab posee un Toolbox que permite la comunicación con un nodo maestro en ROS. Esto le añade todo el poder de cálculo y cómputo de Matlab a ROS, incluyendo la posibilidad de los procesos de simulación con Simulink
+
+La comunicación entre ROS y Python es sólida al tener una amplia  comunidad y documentación, por lo que la rapidez en el desarrollo y la facilidad de implementación representa un factor muy positivo.
