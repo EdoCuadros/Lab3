@@ -67,6 +67,8 @@ rosshutdown;  %Cierra la conexion con el maestro
 ```
 ![Inicio de nodo maestro](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/Ros6.png)
 
+Adicionalmente, empleando la función stpoCore() se puede detener el nodo maestro.
+
 ## Conexión de ROS con Python
 
 Se nos pide escribir un código que permita modificar las velocidades lineales y angulares de la tortuga del paquete *turtlesim*. 
@@ -171,7 +173,9 @@ if __name__ == '__main__':
 ```
 ![Movimiento de tortuga](https://github.com/EdoCuadros/Lab3/blob/main/Imágenes/turtlesim1.png)
 ## Análisis
+La instrucción "/turtle1/cmd_vel" permite acceder al tópcio velocidad de la tortuga. Matlab lo reconoce como un objeto con propiedades que al ser modificadas plantean una trayectoria de movimiento de la tortuga.
 
+El tópico de pose tiene más elementos que se pueden configurar, incluyendo datos de posición, de velcidad y aceleración angular.
 
 ## Conclusiones
 La mejor forma para desarrollar el laboratorio es instalando Linux Ubuntu en la versión 20.04 y ROS en su versión Noetic en una partición de un disco duro. Se intentaron las actividades con variaciones de otras versiones de Ubuntu o de ROS2 pero, en ninguna de ellas se logró la comunicación correcta con Matlab.
